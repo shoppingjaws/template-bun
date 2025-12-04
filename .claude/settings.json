@@ -9,10 +9,15 @@
 			"mcp__container-use__environment_list",
 			"mcp__container-use__environment_create"
 		],
-		"ask": ["Edit(.container-use/*)", "Edit(package.json)", "Edit(mise.toml)"]
+		"ask": [
+			"Edit(.container-use/*)",
+			"Edit(package.json)",
+			"Edit(mise.toml)",
+			"Bash(container-use checkout:*)"
+		]
 	},
 	"hooks": {
-		    "PostToolUse": [
+		"PostToolUse": [
       {
         "matcher": "Bash(container-use checkout:*)",
         "hooks": [

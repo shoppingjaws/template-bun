@@ -3,6 +3,14 @@
 	"module": "index.ts",
 	"type": "module",
 	"private": true,
+  "scripts": {
+    "test": "bun test",
+    "format": "biome format --write",
+		"format:check": "biome format",
+		"lint": "biome lint --fix",
+		"lint:check": "biome lint",
+		"typecheck": "tsc --noEmit"
+  },
 	"devDependencies": {
 		"@types/bun": "latest"
 	},

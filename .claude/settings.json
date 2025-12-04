@@ -10,6 +10,7 @@
       "mcp__container-use__environment_create"
 		],
 		"ask":[
+			"Edit(.container-use/*)",
 			"Edit(package.json)",
 			"Edit(mise.toml)"
 		]

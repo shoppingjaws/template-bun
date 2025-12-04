@@ -11,5 +11,25 @@
 		],
 		"ask": ["Edit(.container-use/*)", "Edit(package.json)", "Edit(mise.toml)"]
 	},
-	"hooks": {}
+	"hooks": {
+		    "PostToolUse": [
+      {
+        "matcher": "Bash(container-use checkout:*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bun run format"
+          },
+          {
+            "type": "command",
+            "command": "bun run lint"
+          },
+          {
+            "type": "command",
+            "command": "bun run typecheck"
+          }
+        ]
+      }
+    ]
+	}
 }

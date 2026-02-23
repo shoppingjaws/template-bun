@@ -3,7 +3,7 @@
   "extends": ["config:recommended"],
   "automerge": true,
   "automergeType": "pr",
-  "platformAutomerge": true,
+  "platformAutomerge": false,
   "mise": {
     "enabled": true
   },

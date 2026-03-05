@@ -1,10 +1,14 @@
 {
 	"permissions": {
 		"allow": [
+			"Bash(bun run typecheck)",
+			"Bash(bun run test)",
+			"Bash(bun test:*)"
 		],
 		"ask": [
 			"Edit(package.json)",
-			"Edit(mise.toml)"
+			"Edit(mise.toml)",
+			"Edit(Dockerfile.test)"
 		]
 	},
 	"hooks": {

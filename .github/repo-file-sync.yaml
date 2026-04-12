@@ -4,3 +4,4 @@ repos:
       - .github/repo-file-sync.yaml
       - .github/workflows/release.yaml
       - renovate.json
+      - repo-setup.sh

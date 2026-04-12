@@ -1,7 +1,14 @@
 {
-	"name": "template-bun",
+	"name": "<placeholder>",
 	"module": "index.ts",
 	"type": "module",
+ "bin": {
+    "safe-push": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoppingjaws/<placeholder>"
+  },
 	"private": true,
   "scripts": {
     "test": "bun test",

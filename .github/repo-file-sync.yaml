@@ -6,4 +6,5 @@ repos:
       - renovate.json
       - .mise/config.toml # for Organization level mise sync
       - biome.json
+      - .claude/settings.json
       - repo-setup.sh

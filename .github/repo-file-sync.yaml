@@ -6,6 +6,6 @@ repos:
       - .github/workflows/release.yaml
       - renovate.json
       - .mise/config.toml # for Organization level mise sync
-      - biome.json
+      - .oxfmtrc.json
       - .claude/settings.json
       - repo-setup.sh

@@ -2,8 +2,8 @@ name: Sync Files
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Weekly on Sunday
-  workflow_dispatch:      # Manual trigger
+    - cron: "0 0 * * 0" # Weekly on Sunday
+  workflow_dispatch: # Manual trigger
 
 jobs:
   sync:
@@ -31,7 +31,6 @@ jobs:
           branch-name: develop/repo-file-sync
           commit-message: repo-file-sync
           pr-title: "[reop-file-sync] Syncronization"
-
 
       - name: Output results
         if: always()

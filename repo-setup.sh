@@ -1,11 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-# リポジトリシークレットの設定
-# op referenceは適宜埋めてください
-op read 'op://Dev/github-shoppingjaws/GHAPP_REPO_FILE_SYNC_APP_ID' | gh secret set GHAPP_REPO_FILE_SYNC_APP_ID
-op read 'op://Dev/github-shoppingjaws/repo-file-sync-shoppingjaws.private-key.pem' | gh secret set GHAPP_REPO_FILE_SYNC_PRIVATE_KEY
-
 # release環境の作成（mainブランチのみアクセス可）
 REPO="$(gh repo view --json nameWithOwner -q .nameWithOwner)"
 gh api --method PUT "repos/${REPO}/environments/release" \

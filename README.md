@@ -1,4 +1,4 @@
-# template-bun
+# Bun project
 
 To install dependencies:
 

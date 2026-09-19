@@ -1,14 +1,7 @@
 {
-	"name": "<placeholder>",
+	"version": "0.0.0",
 	"module": "index.ts",
 	"type": "module",
-	"bin": {
-		"safe-push": "./dist/index.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/shoppingjaws/<placeholder>"
-	},
 	"private": true,
 	"scripts": {
 		"test": "bun test",

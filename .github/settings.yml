@@ -5,4 +5,5 @@ environments:
   - name: release
     deployment_branch_policy:
       custom_branches:
-        - main
+        - name: "v*"
+          type: tag
